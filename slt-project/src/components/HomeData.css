@@ -1,0 +1,116 @@
+/* Add fade-in and fade-out animations */
+.fade-in {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+
+.home-data-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Adjust if you have a header */
+  background-color: #ffffff; /* Set background to white */
+  padding: 20px; /* Optional: Add padding */
+}
+
+.home-heading {
+  font-size: 1.5rem; /* Decreased size */
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  text-align: left; /* Align to the left */
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+  position: relative;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%; /* Ensure it takes full width */
+  height: 400px; /* Set a fixed height */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale the image to cover the container while maintaining aspect ratio */
+}
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #4C9670; /* Match sidebar color */
+  color: #fff;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-data-container {
+    height: auto;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    height: 50vh;
+  }
+
+  .typewriter-text {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+/* New styles for stats section */
+.stats-container {
+  margin-top: 40px;
+}
+
+.stat-card {
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 3rem;
+  color: #4C9670;
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  font-size: 1.5rem;
+  color: #243239;
+}
+
+.stat-card p {
+  font-size: 1.2rem;
+  color: #666;
+}

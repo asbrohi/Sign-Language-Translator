@@ -1,0 +1,168 @@
+/* AddGestures.css */
+
+.add-gestures-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.add-gestures-heading {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between button and status */
+}
+
+.start-btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #28a745; /* Green */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0 10px;
+}
+
+.start-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+.status-container {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.error-message {
+  color: #dc3545; /* Red for errors */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Disabled Button Styles */
+.start-btn:disabled {
+  background-color: #6c757d; /* Gray */
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.7;
+}
+
+.start-btn:disabled:hover {
+  background-color: #6c757d; /* Maintain gray on hover */
+  transform: none;
+}
+
+/* Spinner Styles */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-left-color: white;
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Instructional Label Styles */
+.instruction-crystal {
+  margin-top: 30px; /* Space above the instruction */
+  padding: 20px;
+  background: #4C9670; /* Semi-transparent green */
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 128, 0, 0.3); /* Subtle border */
+  max-width: 600px; /* Limit width for better readability */
+  width: 100%;
+}
+
+.instruction-label {
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  line-height: 1.5; /* Improve line spacing */
+}
+
+/* Tip Modal Styles (Existing or Additional Styles) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it overlays other elements */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal:hover {
+  background-color: #218838;
+}
+
+/* Button Styles */
+.tip-button {
+  background-color: #67BE92;
+  color: white;
+  border-radius: 50%;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tip-button:hover {
+  background-color: #58a47f;
+}
+
+.btn-div {
+  position: absolute; /* Makes the div position relative to the viewport */
+  top: 20px; /* Adjusts how far from the top the div is */
+  right: 20px; /* Adjusts how far from the right the div is */
+  margin: 0; /* Resets any default margins */
+  padding: 10px; /* Optional: Adds padding for aesthetics */
+  border-radius: 8px; /* Optional: Rounded corners */
+}

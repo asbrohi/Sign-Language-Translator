@@ -1,0 +1,163 @@
+/* VerticalNav.css */
+
+/* General styling for the vertical navbar */
+.vertical-navbar {
+    width: 400px;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .vertical-navbar.collapsed {
+    width: 80px; /* Reduced width when collapsed */
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo-text {
+    transition: opacity 0.3s ease;
+  }
+  
+  .vertical-navbar.collapsed .logo-text {
+    opacity: 0;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .nav-links li {
+    width: 100%;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 15px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .nav-btn:hover {
+    background-color: #575757;
+  }
+  
+  .nav-btn i {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .nav-text {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  .vertical-navbar.collapsed .nav-text {
+    opacity: 0;
+  }
+  
+  /* Active Link Styling */
+  .active-link .nav-btn {
+    background-color: #444;
+  }
+  
+  .active-link .nav-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Toggle Button */
+  .toggle-navbar-btn {
+    margin: 20px 0;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .toggle-navbar-btn:hover {
+    background-color: #575757;
+  }
+  
+  .toggle-navbar-btn::after {
+    content: '<<';
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .vertical-navbar.collapsed .toggle-navbar-btn::after {
+    content: '>>';
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .logout-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 15px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #575757;
+  }
+  
+  .logout-btn i {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .logout-text {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  .vertical-navbar.collapsed .logout-text {
+    opacity: 0;
+  }
+  

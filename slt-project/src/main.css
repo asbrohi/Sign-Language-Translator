@@ -1,0 +1,10 @@
+/* main.css - Apply this globally */
+
+body {
+    background-color: white; /* Default to white */
+    background-image: none;   /* Ensure no background images */
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+  }
+  

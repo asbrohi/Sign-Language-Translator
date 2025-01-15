@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+}
+
+
+/* Header for the Logo */
+.logo-header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 100; /* Ensure it's on top */
+}
+
+.logo-wrapper {
+    color: #333;
+}
+
+.half-logo {
+    color: #67BE92; /* Color for 'Ease' part of logo */
+}
+
+body {
+    background-color: #f0f2f5; /* Fallback background color */
+}
+
+.signin-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url('/BG-For_SignIn.png'); 
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Left Section - Image */
+.left-signin-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Add this to stack image and text vertically */
+    padding: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.left-signin-section img {
+    width: 50%;
+    max-width: 300px; /* Better sizing */
+    height: auto;
+    border-radius: 10px;
+    transform: translateY(-40px);
+}
+
+/* Text Below the Image */
+.text-container {
+    text-align: center;
+    /* transform: translateY(-0px); Adjust this value to move the text higher or lower as needed */
+}
+
+.text-container .main-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-container .highlighted-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+    display: inline-block;
+    padding: 0 10px;
+    /* transform: skewX(-5deg); Skew effect like in the provided image */
+    color: #333;
+}
+
+/* Ensure Skewed Highlight Matches */
+.highlighted-text {
+    background-color: white;
+    display: inline-block;
+    color: #333;
+}
+
+.text-container .sub-text {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #555;
+    margin-top: 10px; /* Add space between the highlighted text and the subtext */
+}
+
+/* Right Section - Form */
+.right-signin-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Card-like effect */
+    text-align: center;
+    margin-right: -90px;
+}
+
+/* Form styling */
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Forgot password link */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 0.9rem;
+    color: #67BE92;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.login-button {
+    padding: 12px;
+    background-color: #67BE92;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #4C9670;
+}
+
+/* Sign up option */
+.signup-option {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.signup-option a {
+    color: #67BE92;
+    text-decoration: none;
+}
+
+.signup-option a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #D8000C; /* Red color for error */
+    background-color: #FFBABA; /* Light red background */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D8000C;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-signin-section, .right-signin-section {
+        flex: unset;
+        width: 100%;
+    }
+
+    .left-signin-section {
+        margin-bottom: 20px;
+    }
+
+    .signin-form-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .text-container .main-text {
+        font-size: 1.5rem;
+    }
+
+    .text-container .highlighted-text {
+        font-size: 1.7rem;
+    }
+
+    .text-container .sub-text {
+        font-size: 1.1rem;
+    }
+}

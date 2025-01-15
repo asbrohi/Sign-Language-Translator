@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    /* Ensure it's always on top */
+    top: 0;
+    /* Stick to the top */
+    left: 0;
+    z-index: 1000;
+    /* High value to ensure it overlaps other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+    .logo-wrapper {
+        font-size: 22px;
+        padding: 10px;
+
+        span {
+            color: #67BE92;
+        }
+    }
+
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.signin-button {
+    background-color: white;
+    color: black;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.learn-button {
+    background-color: #67BE92;
+    color: white;
+    border-radius: 50%;
+    border: #67BE92 1px solid;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.learn-button:hover {
+    background-color: white;
+    color: #67BE92;
+}
+
+.signin-button:hover {
+    background-color: white;
+    color: rgb(78, 77, 77);
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 450px; /* Increased width for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: justify; /* Ensures text is justified */
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px; /* Ensure space for the OK button */
+    text-align: justify; /* Justify the text inside the paragraph */
+}
+
+.close-modal {
+    background-color: #4C9670;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 2px; /* Adjusted to move the button below the text */
+    right: 10px; /* Adjusted to position the button in the bottom-right */
+    transition: background-color 0.3s ease;
+}
+
+.close-modal:hover {
+    background-color: #5aab7e;
+}

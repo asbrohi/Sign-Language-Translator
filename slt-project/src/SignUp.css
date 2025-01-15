@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+}
+
+.wrapper {
+  background-image: url('/BG-For_SignIn.png');
+  /* Use the uploaded background image */
+  background-size: 100% 100%;
+  /* Ensure the image covers the whole background */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #f0f2f5;
+  background-image: url('/BG-For_SignIn.png');
+  /* Use the uploaded background image */
+  background-size: 100% 100%;
+  /* Ensure the image covers the whole background */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+/* SignUp Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Glassmorphic Signup Form */
+.signup-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  /* Transparent white */
+  backdrop-filter: blur(10px);
+  /* Blur effect for glassmorphism */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Subtle border for glass effect */
+  z-index: 2;
+  /* Ensure form is on top of everything */
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 3;
+  /* Ensure text is clickable and visible */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  /* Ensure form is clickable */
+}
+
+label {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Transparent inputs for the glass look */
+  z-index: 3;
+  /* Ensure input fields are clickable */
+}
+
+.signup-button {
+  padding: 12px;
+  background-color: #67be92;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+  /* Ensure button is clickable */
+}
+
+.signup-button:hover {
+  background-color: #4c9670;
+}
+
+.login-option {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  z-index: 3;
+  /* Ensure login option is clickable */
+}
+
+.login-option a {
+  color: #67be92;
+  text-decoration: none;
+}
+
+.login-option a:hover {
+  text-decoration: underline;
+}

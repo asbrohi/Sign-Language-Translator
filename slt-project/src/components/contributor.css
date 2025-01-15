@@ -1,0 +1,52 @@
+
+/* Contributor Section CSS */
+.contributors-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contributors-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contributors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contributor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.contributor-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.contributor-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+}
+
+.contributor-field {
+    font-size: 1rem;
+    color: #777;
+}
